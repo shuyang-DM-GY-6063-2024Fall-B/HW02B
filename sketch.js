@@ -15,7 +15,7 @@ function draw() {
   let color6 = '#486177'//dark blue gray
   let color7 = '#a55e4c'//light red gray
   let color8 = '#854b47'//dark red gray
-  let color9 = '#1e2144'//dark blue
+  let color9 = '#02034d'//dark blue
   
 
   background(color9)
