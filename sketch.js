@@ -21,7 +21,23 @@ function draw() {
   background(color9)
   angleMode(DEGREES)
   
+  fill(color7);
+  stroke(color7);
+  quad(0,0,0,200,150,150,150,0)
+
+  fill(color8);
+  stroke(color8);
+
+  quad(0,0,30,20,80,250,0,300)
+  triangle(50,0,500,0,350,100)
+  triangle(375,540,720,540,580,400)
   
+  fill(color7);
+  stroke(color7);
+  triangle(325,540,0,540,120,400)
+  quad(720,0,580,0,550,200,720,250)
+
+ 
   fill(color2)
   stroke(color2)
   arc(centerX, centerY-96, 535,360, 30, 150,OPEN)
@@ -34,9 +50,8 @@ function draw() {
   stroke(color9)  
   ellipse(centerX, centerY-10,50)
   
-  // let triX = 
-  // let triY = 
-  let triL1 = 380
+
+  let triL1 = 375
   let triL2 = 120
 
   fill(color3)
@@ -55,24 +70,62 @@ function draw() {
   let cube1Y = 0
   let cube1H = 400
 
+  push()
   translate(centerX-500,centerY-100);
   rotate(55);
   fill(color5);
   stroke(color5);
-  quad(cube1X,cube1Y,cube1X+80,cube1Y-10,cube1X +80,cube1Y -10-cube1H,cube1X,cube1Y -cube1H)
-
+  quad(cube1X,cube1Y,cube1X+80,cube1Y-10,cube1X +80,cube1Y -10-cube1H,cube1X,cube1Y -cube1H)  
   fill(color6);
   stroke(color6);
-  quad(cube1X,cube1Y,cube1X,cube1Y -cube1H,cube1X-50,cube1Y-20-cube1H,cube1X-50,cube1Y-20)
-  
+  quad(cube1X,cube1Y,cube1X,cube1Y -cube1H,cube1X-50,cube1Y-20-cube1H,cube1X-50,cube1Y-20) 
   fill(color3);
   stroke(color3);
   quad(cube1X,cube1Y -cube1H,cube1X-50,cube1Y-20-cube1H,cube1X +20,cube1Y -30-cube1H,cube1X +80,cube1Y -10-cube1H)
-  
-  
-  translate(centerX,centerY);
-  rotate(55);
-  
+  pop()
+
+  push()
+  translate(centerX-500,centerY+100);
+  rotate(115); 
+  fill(color5);
+  stroke(color5);
+  quad(cube1X,cube1Y,cube1X+80,cube1Y-10,cube1X +80,cube1Y -10-cube1H,cube1X,cube1Y -cube1H)
+  fill(color6);
+  stroke(color6);
+  quad(cube1X,cube1Y,cube1X,cube1Y -cube1H,cube1X-50,cube1Y-20-cube1H,cube1X-50,cube1Y-20)
+  fill(color3);
+  stroke(color3);
+  quad(cube1X,cube1Y -cube1H,cube1X-50,cube1Y-20-cube1H,cube1X +20,cube1Y -30-cube1H,cube1X +80,cube1Y -10-cube1H)
+  pop()
+ 
+  push()
+  translate(centerX+500,centerY+100);
+  rotate(235); 
+  fill(color5);
+  stroke(color5);
+  quad(cube1X,cube1Y,cube1X+80,cube1Y-10,cube1X +80,cube1Y -10-cube1H,cube1X,cube1Y -cube1H)
+  fill(color6);
+  stroke(color6);
+  quad(cube1X,cube1Y,cube1X,cube1Y -cube1H,cube1X-50,cube1Y-20-cube1H,cube1X-50,cube1Y-20)
+  fill(color3);
+  stroke(color3);
+  quad(cube1X,cube1Y -cube1H,cube1X-50,cube1Y-20-cube1H,cube1X +20,cube1Y -30-cube1H,cube1X +80,cube1Y -10-cube1H)
+  pop()
+
+  push()
+  translate(centerX+450,centerY+50);
+  rotate(315); 
+  fill(color5);
+  stroke(color5);
+  quad(cube1X,cube1Y,cube1X+80,cube1Y-10,cube1X +80,cube1Y -10-cube1H,cube1X,cube1Y -cube1H)
+  fill(color6);
+  stroke(color6);
+  quad(cube1X,cube1Y,cube1X,cube1Y -cube1H,cube1X-50,cube1Y-20-cube1H,cube1X-50,cube1Y-20)
+  fill(color3);
+  stroke(color3);
+  quad(cube1X,cube1Y -cube1H,cube1X-50,cube1Y-20-cube1H,cube1X +20,cube1Y -30-cube1H,cube1X +80,cube1Y -10-cube1H)
+  pop()
+
   fill(color5);
   stroke(color5);
   quad(cube1X,cube1Y,cube1X+80,cube1Y-10,cube1X +80,cube1Y -10-cube1H,cube1X,cube1Y -cube1H)
@@ -84,7 +137,6 @@ function draw() {
   fill(color3);
   stroke(color3);
   quad(cube1X,cube1Y -cube1H,cube1X-50,cube1Y-20-cube1H,cube1X +20,cube1Y -30-cube1H,cube1X +80,cube1Y -10-cube1H)
-
 //   background('#161648');
 
 //   fill(color1);
