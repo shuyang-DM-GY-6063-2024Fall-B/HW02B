@@ -74,7 +74,7 @@ function draw() {
   triangle(centerX-triL1*4/5, centerY, centerX, centerY-3*triL1/5, centerX+triL2*4/5, centerY-3*triL1/5+3*triL2/5);
   triangle(centerX+triL1*4/5, centerY, centerX, centerY+3*triL1/5, centerX+triL1*4/5-triL2*4/5, centerY-3*triL2/5);
 
-  // draw the cubes by using rotate
+  // draw 4 cubes by using rotate
   let cube1X = 0
   let cube1Y = 0
   let cube1H = 400
